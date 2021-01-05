@@ -8,7 +8,9 @@ class MainPageLocators():
     MENU_HEADER_PAKETNIE_USLUGI = (By.CSS_SELECTOR,".main-menu.col-8.d-none.d-lg-block .menu-list li:nth-child(3)")
     MENU_HEADER_BLOG = (By.CSS_SELECTOR,".main-menu.col-8.d-none.d-lg-block .menu-list li:nth-child(4)")
     MENU_HEADER_DOCUMENTI = (By.CSS_SELECTOR,".main-menu.col-8.d-none.d-lg-block .menu-list li:nth-child(5)")
-
+    HEADER_LANGUAGE_RU = (By.CSS_SELECTOR,".translate.d-flex :nth-child(1).ng-star-inserted")
+    HEADER_LANGUAGE_UA = (By.CSS_SELECTOR,".translate.d-flex :nth-child(2).ng-star-inserted")
+    HEADER_PHONE = (By.CSS_SELECTOR,".contact.d-lg-flex.d-none.w-100")
 
     CLICK_LOGIN_FOOTER = (By.CSS_SELECTOR,".login-wrapper.ng-star-inserted img")
     CLICK_LOGO_FOOTER = (By.ID, "logo-img")
@@ -17,22 +19,50 @@ class MainPageLocators():
     MENU_FOOTER_PAKETNIE_USLUGI = (By.CSS_SELECTOR,".menu-list.d-none.d-lg-flex li:nth-child(3)")
     MENU_FOOTER_BLOG = (By.CSS_SELECTOR,".menu-list.d-none.d-lg-flex li:nth-child(4)")
     MENU_FOOTER_DOCUMENTI = (By.CSS_SELECTOR,".menu-list.d-none.d-lg-flex li:nth-child(5)")
+    FOOTER_LANGUAGE_RU = (By.CSS_SELECTOR,".translate.pt-5 button:nth-child(1)")
+    FOOTER_LANGUAGE_UA = (By.CSS_SELECTOR,".translate.pt-5 button:nth-child(2)")
+    FOOTER_GOOGLE_PLAY = (By.CSS_SELECTOR,".d-md-block .mobile-apps a:nth-child(1)")
+    FOOTER_APP_STORY = (By.CSS_SELECTOR,".d-md-block .mobile-apps a:nth-child(2)")
+    FOOTER_FACEBOOK = (By.CSS_SELECTOR,".social-net.pt-3 a:nth-child(1) img")
+    FOOTER_INSTAGRAMM = (By.CSS_SELECTOR,".social-net.pt-3 a:nth-child(2) img")
+
+    TELEGRAM = (By.CSS_SELECTOR,".flex-wrap div:nth-child(1).contact-item.d-flex a")
+    VIBER = (By.CSS_SELECTOR,".flex-wrap div:nth-child(2).contact-item.d-flex a")
+    WATSAP = (By.CSS_SELECTOR,".flex-wrap div:nth-child(4).contact-item.d-flex a")
+    MESSENDGER = (By.CSS_SELECTOR,".flex-wrap div:nth-child(5).contact-item.d-flex a")
+    PHONE = (By.CSS_SELECTOR,".flex-wrap div:nth-child(6).contact-item.d-flex a")
+    EMAIL = (By.CSS_SELECTOR,"..flex-wrap div:nth-child(7).contact-item.d-md-flex a")
+
+    ONE_USLUGA_1 = (By.CSS_SELECTOR, ".services-list li:nth-child(1) .radio-wrapper .radio-checked")
+    ONE_USLUGA_2 = (By.CSS_SELECTOR, ".services-list li:nth-child(2) .radio-wrapper .radio-checked")
+    ONE_USLUGA_3 = (By.CSS_SELECTOR, ".services-list li:nth-child(3) .radio-wrapper .radio-checked")
+
+    CHOOSE_LEVEL_FREELANSERA_USLUGA2_FREE_1 = (By.CSS_SELECTOR,"#executor-level-list li:nth-child(1)")
+    CHOOSE_LEVEL_FREELANSERA_USLUGA2_FREE_2 = (By.CSS_SELECTOR,"#executor-level-list li:nth-child(2)")
+    CHOOSE_LEVEL_FREELANSERA_USLUGA2_FREE_3 = (By.CSS_SELECTOR,"#executor-level-list li:nth-child(3)")
+    BUTTON_PAY_ONE_USLUGA = (By.CSS_SELECTOR, ".buy-btn-wrp button.btn-fb-green")
+
+    POLE_PHONE_ON_ORDER_MODALKA = (By.ID,"userPhoneServiced")
+    POLE_NAME_ON_ORDER_MODALKA = (By.CSS_SELECTOR,"#wnid_checkout_service .modal-content div:nth-child(2) div:nth-child(2) .form__input.ng-untouched.ng-pristine.ng-invalid")
+    POLE_SURNAME_ON_ORDER_MODALKA = (By.CSS_SELECTOR,"#wnid_checkout_service .modal-content div:nth-child(2) div:nth-child(3) .form__input.ng-untouched.ng-pristine.ng-invalid")
+    POLE_FOR_INPUT_QUESTION_ON_ORDER_MODALKA = (By.CSS_SELECTOR,"#wnid_checkout_service .modal-content div:nth-child(2) div:nth-child(4) .form__input.ng-untouched.ng-pristine.ng-invalid")
+    BUTTON_ON_ORDER_MODALKA = (By.ID,"btid_checkout")
+
+    BUTTON_ORDER_PAKET1 = (By.CSS_SELECTOR,".packages.ng-star-inserted .row div:nth-child(1) .row button")
+    BUTTON_ORDER_PAKET2 = (By.CSS_SELECTOR,".packages.ng-star-inserted .row div:nth-child(2) .row button")
+    BUTTON_ORDER_PAKET3 = (By.CSS_SELECTOR,".packages.ng-star-inserted .row div:nth-child(3) .row button")
+    BUTTON_ORDER_PAKET4 = (By.CSS_SELECTOR,".packages.ng-star-inserted .row div:nth-child(4) .row button")
+    BUTTON_ORDER_PAKET5 = (By.CSS_SELECTOR,".packages.ng-star-inserted .row div:nth-child(5) .row button")
+    BUTTON_ORDER_PAKET6 = (By.CSS_SELECTOR,".packages.ng-star-inserted .row div:nth-child(6) .row button")
 
 
+    POLE_PHONE_ON_ORDER_MODALKA_BUY_PAKET = (By.CSS_SELECTOR,"input#userPhonePackage")
+    TEMP_HHH = (By.CSS_SELECTOR,"#wnidCheckout .modal-header.flex-wrap.justify-content-center.text-center")
 
-
-
-
-
-
-
-
-
-
-    # BUTTON_ATTENT = (By.ID, "details-button")
-    # OPEN_SITE = (By.ID, "proceed-link")
-    # SEND_LOAN = (By.ID, "btid_send_loan")
-    # # SEND_LOAN = (By.CSS_SELECTOR, "div:nth-child(3) > div.send-btn-mob.d-flex.d-md-none")
-    # # SEND_LOAN = ('//body/div[2]/section[1]/section[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[3]/div[3]/div[2]/span[1]')
-    # # SEND_LOAN = ('/html[1]/body[1]/div[2]/section[1]/section[1]/div[2]/div[1]/div[1]/div[3]/div[2]/div[1]/div[3]/div[3]/div[1]/span[1]')
-    # LINK_KREDITY = (By.CSS_SELECTOR, ".main-menu.w-100.d-flex.justify-content-around>li:nth-child(6) a")
+    POLE_NAME_ON_ORDER_MODALKA_BUY_PAKET = (By.CSS_SELECTOR,"app-packages input#userFirstName")
+    POLE_SURNAME_ON_ORDER_MODALKA_BUY_PAKET = (By.CSS_SELECTOR,"app-packages input#userLastName")
+    LINK_ON_PROMOKOD_IN_ORDER_MODALKA_BUY_PAKET = (By.CSS_SELECTOR,"app-packages a")
+    POLE_FOR_PROMOKOD_IN_ORDER_MODALKA_BUY_PAKET = (By.CSS_SELECTOR,"app-packages .form-group div div input")
+    BUTTON_AKTIVATSII_PROMOKODA_IN_ORDER_MODALKA_BUY_PAKET = (By.CSS_SELECTOR,"app-packages .form-group div div button")
+    TEXT_EROR_FALSE_PROMOKOD = (By.CSS_SELECTOR,"app-packages .form-group div div:nth-child(3)")
+    BUTTON_PAY_ON_ORDER_MODALKA_BUY_PAKET = (By.CSS_SELECTOR,".packages.ng-star-inserted .modal-footer.pt-0 button")
