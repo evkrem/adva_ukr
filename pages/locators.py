@@ -93,6 +93,18 @@ class OblastPravaPageLocators():
     ARTICLE_8_IN_OBLASTI_PRAVO = (By.CSS_SELECTOR,".laws-wrapper.row .col-3 ul li:nth-child(8) button")
     ARTICLE_9_IN_OBLASTI_PRAVO = (By.CSS_SELECTOR,".laws-wrapper.row .col-3 ul li:nth-child(9) button")
 
+    FOR_COUNT_ARTICLES_IN_OBLASTI_PRAVA = (By.CSS_SELECTOR,".laws-wrapper.row .col-3 ul li  button")
     NAME_ARTICLE = (By.CSS_SELECTOR,"#anch h3")
 
+class PaketPageLocators():
+    PAKET1 = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(1) div")
+    PAKET2 = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(2) div")
+    PAKET3 = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(3) div")
+    PAKET4 = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(4) div")
+    PAKET5 = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(5) div")
+    PAKET6 = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(6) div")
 
+    BUTTON_ON_PAKET = (By.CSS_SELECTOR,".packages-info button")
+
+    PAKET_NAME = (By.CSS_SELECTOR,".packages-info .service-title")
+    PAKET_NAME_ON_MENU = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(1) span span")
