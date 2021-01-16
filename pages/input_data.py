@@ -7,7 +7,5 @@ class RandomUserData():
     person = Person('uk')
     name = person.name()
     surname = person.surname()
-    promokod = "ABRAKADABRA"
-
-
-# check working github
+    promokod_false = "ABRAKADABRA"
+    promokod_true = "L3A43"

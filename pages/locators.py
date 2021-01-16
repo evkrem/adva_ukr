@@ -66,3 +66,33 @@ class MainPageLocators():
     BUTTON_AKTIVATSII_PROMOKODA_IN_ORDER_MODALKA_BUY_PAKET = (By.CSS_SELECTOR,"app-packages .form-group div div button")
     TEXT_EROR_FALSE_PROMOKOD = (By.CSS_SELECTOR,"app-packages .form-group div div:nth-child(3)")
     BUTTON_PAY_ON_ORDER_MODALKA_BUY_PAKET = (By.CSS_SELECTOR,".packages.ng-star-inserted .modal-footer.pt-0 button")
+
+    ALL_OTZIVI = (By.CSS_SELECTOR,"#reviev-wrapper a")
+
+class OblastPravaPageLocators():
+    OBLAST_PRAVA_1 =(By.CSS_SELECTOR,".laws-wrapper.row .col-md-3 ul li:nth-child(1) button")
+    OBLAST_PRAVA_2 =(By.CSS_SELECTOR,".laws-wrapper.row .col-md-3 ul li:nth-child(2) button")
+    OBLAST_PRAVA_3 =(By.CSS_SELECTOR,".laws-wrapper.row .col-md-3 ul li:nth-child(3) button")
+    OBLAST_PRAVA_4 =(By.CSS_SELECTOR,".laws-wrapper.row .col-md-3 ul li:nth-child(4) button")
+    OBLAST_PRAVA_5 =(By.CSS_SELECTOR,".laws-wrapper.row .col-md-3 ul li:nth-child(5) button")
+    OBLAST_PRAVA_6 =(By.CSS_SELECTOR,".laws-wrapper.row .col-md-3 ul li:nth-child(6) button")
+    OBLAST_PRAVA_7 =(By.CSS_SELECTOR,".laws-wrapper.row .col-md-3 ul li:nth-child(7) button")
+    OBLAST_PRAVA_8 =(By.CSS_SELECTOR,".laws-wrapper.row .col-md-3 ul li:nth-child(8) button")
+    OBLAST_PRAVA_9 =(By.CSS_SELECTOR,".laws-wrapper.row .col-md-3 ul li:nth-child(9) button")
+    OBLAST_PRAVA_10 =(By.CSS_SELECTOR,".laws-wrapper.row .col-md-3 ul li:nth-child(10) button")
+    OBLAST_PRAVA_11 =(By.CSS_SELECTOR,".laws-wrapper.row .col-md-3 ul li:nth-child(11) button")
+    OBLAST_PRAVA_12 =(By.CSS_SELECTOR,".laws-wrapper.row .col-md-3 ul li:nth-child(12) button")
+
+    ARTICLE_1_IN_OBLASTI_PRAVO = (By.CSS_SELECTOR,".laws-wrapper.row .col-3 ul li:nth-child(1) button")
+    ARTICLE_2_IN_OBLASTI_PRAVO = (By.CSS_SELECTOR,".laws-wrapper.row .col-3 ul li:nth-child(2) button")
+    ARTICLE_3_IN_OBLASTI_PRAVO = (By.CSS_SELECTOR,".laws-wrapper.row .col-3 ul li:nth-child(3) button")
+    ARTICLE_4_IN_OBLASTI_PRAVO = (By.CSS_SELECTOR,".laws-wrapper.row .col-3 ul li:nth-child(4) button")
+    ARTICLE_5_IN_OBLASTI_PRAVO = (By.CSS_SELECTOR,".laws-wrapper.row .col-3 ul li:nth-child(5) button")
+    ARTICLE_6_IN_OBLASTI_PRAVO = (By.CSS_SELECTOR,".laws-wrapper.row .col-3 ul li:nth-child(6) button")
+    ARTICLE_7_IN_OBLASTI_PRAVO = (By.CSS_SELECTOR,".laws-wrapper.row .col-3 ul li:nth-child(7) button")
+    ARTICLE_8_IN_OBLASTI_PRAVO = (By.CSS_SELECTOR,".laws-wrapper.row .col-3 ul li:nth-child(8) button")
+    ARTICLE_9_IN_OBLASTI_PRAVO = (By.CSS_SELECTOR,".laws-wrapper.row .col-3 ul li:nth-child(9) button")
+
+    NAME_ARTICLE = (By.CSS_SELECTOR,"#anch h3")
+
+

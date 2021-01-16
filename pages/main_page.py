@@ -1,10 +1,9 @@
 from .base_page import BasePage
-from selenium.webdriver.common.by import By
-import pytest
 from .input_data import RandomUserData
 from .locators import MainPageLocators
 import time
 from selenium.webdriver.common.alert import Alert
+from selenium.webdriver.common.by import By
 
 
 
@@ -159,19 +158,35 @@ class MainPage(BasePage):
     def pay_paket(self,browser):
         self.browser.find_element(*MainPageLocators.BUTTON_ORDER_PAKET1).click()
         self.browser.find_element(*MainPageLocators.POLE_PHONE_ON_ORDER_MODALKA_BUY_PAKET).click()
-
         print("surname = ", *RandomUserData.surname," name = ",*RandomUserData.name, "phone = ",*RandomUserData.phone)
         self.browser.find_element(*MainPageLocators.POLE_PHONE_ON_ORDER_MODALKA_BUY_PAKET).send_keys(*RandomUserData.phone)
         self.browser.find_element(*MainPageLocators.POLE_NAME_ON_ORDER_MODALKA_BUY_PAKET).click()
         self.browser.find_element(*MainPageLocators.POLE_NAME_ON_ORDER_MODALKA_BUY_PAKET).send_keys(*RandomUserData.name)
         self.browser.find_element(*MainPageLocators.POLE_SURNAME_ON_ORDER_MODALKA_BUY_PAKET).click()
         self.browser.find_element(*MainPageLocators.POLE_SURNAME_ON_ORDER_MODALKA_BUY_PAKET).send_keys(*RandomUserData.surname)
-        # self.browser.find_element(*MainPageLocators.LINK_ON_PROMOKOD_IN_ORDER_MODALKA_BUY_PAKET).click()
-        # self.browser.find_element(*MainPageLocators.POLE_FOR_PROMOKOD_IN_ORDER_MODALKA_BUY_PAKET).click()
-        # self.browser.find_element(*MainPageLocators.POLE_FOR_PROMOKOD_IN_ORDER_MODALKA_BUY_PAKET).send_keys(*RandomUserData.promokod)
-        # self.browser.find_element(*MainPageLocators.BUTTON_AKTIVATSII_PROMOKODA_IN_ORDER_MODALKA_BUY_PAKET).click()
-        # text_activatsii_promokoda = self.browser.find_element(*MainPageLocators.TEXT_EROR_FALSE_PROMOKOD).text
-        # print("text asserta promo = ",text_activatsii_promokoda)
-        # assert text_activatsii_promokoda == "AUTH-HOME.promo-success", "promokod okazalsya ne vernim"
-        time.sleep(10)
         self.browser.find_element(*MainPageLocators.BUTTON_PAY_ON_ORDER_MODALKA_BUY_PAKET).click()
+
+    def check_promocode_false(self,browser):
+        self.browser.find_element(*MainPageLocators.BUTTON_ORDER_PAKET1).click()
+        self.browser.find_element(*MainPageLocators.LINK_ON_PROMOKOD_IN_ORDER_MODALKA_BUY_PAKET).click()
+        self.browser.find_element(*MainPageLocators.POLE_FOR_PROMOKOD_IN_ORDER_MODALKA_BUY_PAKET).click()
+        self.browser.find_element(*MainPageLocators.POLE_FOR_PROMOKOD_IN_ORDER_MODALKA_BUY_PAKET).send_keys(*RandomUserData.promokod_false)
+        self.browser.find_element(*MainPageLocators.BUTTON_AKTIVATSII_PROMOKODA_IN_ORDER_MODALKA_BUY_PAKET).click()
+        text_activatsii_promokoda = self.browser.find_element(*MainPageLocators.TEXT_EROR_FALSE_PROMOKOD).text
+        print("text asserta promo = ",text_activatsii_promokoda)
+        assert text_activatsii_promokoda == "AUTH-HOME.promo-success", "promokod okazalsya ne vernim"
+
+    def check_promocode_true(self,browser):
+        self.browser.find_element(*MainPageLocators.BUTTON_ORDER_PAKET1).click()
+        self.browser.find_element(*MainPageLocators.LINK_ON_PROMOKOD_IN_ORDER_MODALKA_BUY_PAKET).click()
+        self.browser.find_element(*MainPageLocators.POLE_FOR_PROMOKOD_IN_ORDER_MODALKA_BUY_PAKET).click()
+        self.browser.find_element(*MainPageLocators.POLE_FOR_PROMOKOD_IN_ORDER_MODALKA_BUY_PAKET).send_keys(*RandomUserData.promokod_true)
+        self.browser.find_element(*MainPageLocators.BUTTON_AKTIVATSII_PROMOKODA_IN_ORDER_MODALKA_BUY_PAKET).click()
+        text_activatsii_promokoda = self.browser.find_element(*MainPageLocators.TEXT_EROR_FALSE_PROMOKOD).text
+        print("text asserta promo = ",text_activatsii_promokoda)
+        assert text_activatsii_promokoda == "AUTH-HOME.promo-success", "promokod okazalsya ne vernim"
+
+    def open_page_all_otzivi(self,browser):
+        self.browser.find_element(*MainPageLocators.ALL_OTZIVI).click()
+        link = self.browser.current_url
+        assert "review" in link, "page All otzivi don`t open"

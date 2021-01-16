@@ -104,35 +104,30 @@ class TestFooterMenuOnMainPage():
         page.click_on_menu_oblasti_prava_footer(browser)  # click on menu oblastiprava
         page.click_on_menu_glavnaya_footer(browser)  # open glavnaya
 
-    # @pytest.mark.skip
     def test_open_menu_footer_oblasti_prava(self, browser):
         link = "https://dev.adva.org.ua/ua/home"
         page = MainPage(browser, link)  # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес
         page.open()  # открываем страницу
         page.click_on_menu_oblasti_prava_footer(browser)  # click on menu oblastiprava
 
-    # @pytest.mark.skip
     def test_open_menu_footer_paketnie_uslugi(self, browser):
         link = "https://dev.adva.org.ua/ua/home"
         page = MainPage(browser,link)  # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес
         page.open()  # открываем страницу
         page.click_on_menu_paketnie_uslugi_footer(browser)  #
 
-    # @pytest.mark.skip
     def test_open_menu_footer_blog(self, browser):
         link = "https://dev.adva.org.ua/ua/home"
         page = MainPage(browser,link)  # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес
         page.open()  # открываем страницу
         page.click_on_menu_blog_footer(browser)  #
 
-    # @pytest.mark.skip
     def test_open_menu_footer_dokumenti(self, browser):
         link = "https://dev.adva.org.ua/ua/home"
         page = MainPage(browser,link)  # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес
         page.open()  # открываем страницу
         page.click_on_menu_dokumenti_footer(browser)  # click on menu oblastiprava
 
-    # @pytest.mark.skip
     def test_logo_footer(self, browser):
         link = "https://dev.adva.org.ua/ua/home"
         page = MainPage(browser,link)  # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес
@@ -140,14 +135,12 @@ class TestFooterMenuOnMainPage():
         page.click_on_menu_oblasti_prava_footer(browser)  # click on menu oblastiprava
         page.click_on_logo_footer(browser)  # click on logo "adva" on homepage
 
-    # @pytest.mark.skip
     def test_buton_login_footer(self, browser):
         link = "https://dev.adva.org.ua/ua/home"
         page = MainPage(browser,link)  # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес
         page.open()  # открываем страницу
         page.open_login_page_footer(browser)  # открываем страницу логина
 
-    # @pytest.mark.run
     def test_change_language_ru_to_ua_footer(self, browser):
         link = "https://dev.adva.org.ua/ru/home"
         page = MainPage(browser,link)  # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес
@@ -155,19 +148,11 @@ class TestFooterMenuOnMainPage():
         page.change_language_ru_to_ua_footer(browser)
 
     # @pytest.mark.run
-    # @pytest.mark.skip
     def test_change_language_ua_to_ru_footer(self, browser):
         link = "https://dev.adva.org.ua/ua/home"
         page = MainPage(browser,link)  # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес
         page.open()  # открываем страницу
         page.change_language_ua_to_ru_footer(browser)
-
-    # @pytest.mark.run
-    def test_change_language_ru_to_ua_to_ru_footer(self, browser):
-        link = "https://dev.adva.org.ua/ru/home"
-        page = MainPage(browser,link)  # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес
-        page.open()  # открываем страницу
-        page.change_language_ru_to_ua_to_ru_footer(browser)
 
 class TestOpenMessendgers():
     def test_open_telegram(self,browser):
@@ -182,8 +167,7 @@ class TestOpenMessendgers():
         page.open()  # открываем страницу
         page.open_viber(browser)
 
-
-# @pytest.mark.run
+@pytest.mark.skip
 class TestPayOneService():
     def test_order_one_service(self,browser):
         link = "https://dev.adva.org.ua/ru/home"
@@ -191,17 +175,35 @@ class TestPayOneService():
         page.open()  # открываем страницу
         page.pay_one_service(browser)
 
-@pytest.mark.run
 # @pytest.mark.xfail(reason="он и должен был упасть, т,к, был введен неправильный промокод")
 class TestPayPaket():
+    # @pytest.mark.skip(reason="этот тест просто пропускаем")
     def test_buy_paket1(self,browser):
         link = "https://dev.adva.org.ua/ru/home"
         page = MainPage(browser,link)  # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес
         page.open()  # открываем страницу
         page.pay_paket(browser)
 
-    @pytest.mark.skip
-    def test_xxx(self, browser):
-        pass
+    @pytest.mark.xfail(reason="этот тест просто пропускаем")
+    def test_check_promocode_false(self, browser):
+        link = "https://dev.adva.org.ua/ru/home"
+        page = MainPage(browser,link)  # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес
+        page.open()  # открываем страницу
+        page.check_promocode_false(browser)
+
+    @pytest.mark.run
+    def test_check_promocode_true(self, browser):
+        link = "https://dev.adva.org.ua/ru/home"
+        page = MainPage(browser,link)  # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес
+        page.open()  # открываем страницу
+        page.check_promocode_true(browser)
+
+# @pytest.mark.run
+class TestBlockOtzivi():
+    def test_open_page_with_all_otzivi(self,browser):
+        link = "https://dev.adva.org.ua/ru/home"
+        page = MainPage(browser,link)  # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес
+        page.open()  # открываем страницу
+        page.open_page_all_otzivi(browser)
 
 
