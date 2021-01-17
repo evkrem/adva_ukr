@@ -1,5 +1,5 @@
 from .base_page import BasePage
-from .locators import OblastPravaPageLocators
+from .locators import OblastPravaPageLocators, SafeModeLocators
 import time
 from selenium.common.exceptions import NoSuchElementException
 

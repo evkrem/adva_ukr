@@ -1,6 +1,7 @@
 from selenium.common.exceptions import NoSuchElementException, TimeoutException, NoAlertPresentException
 import math
 from selenium.webdriver.support.wait import WebDriverWait
+from .locators import SafeModeLocators
 
 
 class BasePage():
@@ -12,3 +13,8 @@ class BasePage():
     def open(self):
         self.browser.maximize_window()
         self.browser.get(self.url)
+        try:
+            self.browser.find_element(*SafeModeLocators.BUTTON_FOR_ENTRANCE_IN_SAFE_MODE).click()
+            self.browser.find_element(*SafeModeLocators.BUTTON_FOR_ENTRANCE_ON_SITE).click()
+        except NoSuchElementException:
+            return

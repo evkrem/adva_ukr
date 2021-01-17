@@ -1,4 +1,7 @@
 from selenium.webdriver.common.by import By
+class SafeModeLocators():
+    BUTTON_FOR_ENTRANCE_IN_SAFE_MODE = (By.ID,"details-button")
+    BUTTON_FOR_ENTRANCE_ON_SITE = (By.ID,"proceed-link")
 
 class MainPageLocators():
     CLICK_LOGIN_HEADER = (By.CSS_SELECTOR,".join.mr-md-4.mr-0.align-items-center")
@@ -114,3 +117,7 @@ class PaketPageLocators():
     PAKET_NAME4_ON_MENU = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(4) span span")
     PAKET_NAME5_ON_MENU = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(5) span span")
     PAKET_NAME6_ON_MENU = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(6) span span")
+
+class BlogPagesLocators():
+    NAME_ARTICLE = (By.CSS_SELECTOR,".container.blogs  button")
+    IMG = (By.CSS_SELECTOR,".container.blogs  img")

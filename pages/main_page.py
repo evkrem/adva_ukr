@@ -1,6 +1,6 @@
 from .base_page import BasePage
 from .input_data import RandomUserData
-from .locators import MainPageLocators
+from .locators import MainPageLocators, SafeModeLocators
 import time
 from selenium.webdriver.common.alert import Alert
 from selenium.webdriver.common.by import By

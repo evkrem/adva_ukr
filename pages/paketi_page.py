@@ -1,5 +1,5 @@
 from .base_page import BasePage
-from .locators import PaketPageLocators
+from .locators import PaketPageLocators, SafeModeLocators
 import time
 
 class PaketsPage(BasePage):
