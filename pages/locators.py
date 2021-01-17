@@ -105,6 +105,12 @@ class PaketPageLocators():
     PAKET6 = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(6) div")
 
     BUTTON_ON_PAKET = (By.CSS_SELECTOR,".packages-info button")
+    BUTTON_ON_MODAL_BUY_PAKET = (By.ID,"btid_checkout")
 
     PAKET_NAME = (By.CSS_SELECTOR,".packages-info .service-title")
-    PAKET_NAME_ON_MENU = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(1) span span")
+    PAKET_NAME1_ON_MENU = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(1) span span")
+    PAKET_NAME2_ON_MENU = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(2) span span")
+    PAKET_NAME3_ON_MENU = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(3) span span")
+    PAKET_NAME4_ON_MENU = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(4) span span")
+    PAKET_NAME5_ON_MENU = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(5) span span")
+    PAKET_NAME6_ON_MENU = (By.CSS_SELECTOR,".desctop-tabs.ng-star-inserted li:nth-child(6) span span")
