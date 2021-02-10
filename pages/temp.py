@@ -1,6 +1,11 @@
 from mimesis import Person
 import random
 
-person = "В пакет ADVA СТАНДАРТ "
+person = Person('uk')
+name = person.name()
+surname = person.surname()
+phone = int("63" + str(random.randint(1000000, 9999999)))
 
-print("person = ",person.lower())
+print(name)
+print(surname)
+print(phone)

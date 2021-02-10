@@ -121,3 +121,26 @@ class PaketPageLocators():
 class BlogPagesLocators():
     NAME_ARTICLE = (By.CSS_SELECTOR,".container.blogs  button")
     IMG = (By.CSS_SELECTOR,".container.blogs  img")
+
+class LoginPageLocators():
+    LOGIN_PHONE = (By.CSS_SELECTOR,".authorization nav:nth-child(1) div:nth-child(1)")
+    POLE_PHONE = (By.CSS_SELECTOR, "form .ng-untouched.ng-pristine.ng-invalid")
+    POLE_KOD_SMS = (By.ID, "userCode")
+    BUTTON_SEND_KOD_SMS = (By.ID, "get-otp")
+    BUTTON_LOGIN_ON_PHONE = (By.CSS_SELECTOR, ".login-wrapper .ml-2")
+
+    LOGIN_SERTIFICAT = (By.CSS_SELECTOR,".authorization nav:nth-child(1) div:nth-child(2)")
+    POLE_SERTIFICAT = (By.CSS_SELECTOR,"input[placeholder='сертификат']")
+    POLE_PASWORD_ON_SERTIFICAT_AND_EMAIL = (By.CSS_SELECTOR,"input[placeholder='пароль']")
+    BUTTON_LOGIN_ON_SERTIFICAT_AND_EMAIL_AND_SENG_PASSWORD_FOR_RESET = (By.CSS_SELECTOR,".login-wrapper button")
+
+    LOGIN_EMAIL = (By.CSS_SELECTOR,".authorization nav:nth-child(1) div:nth-child(3)")
+    POLE_EMAIL = (By.CSS_SELECTOR,"input[placeholder='email']")
+    FORGOT_PASWORD = (By.CSS_SELECTOR,".authorization .reset-pass")
+    POLE_FOR_INPUT_RESET_EMAIL = (By.CSS_SELECTOR,"input[placeholder='Введите емейл']")
+
+class AdminnPageLocators():
+    POLE_LOGIN_ADMINKA = (By.ID,"id_username")
+    POLE_PASWORD_ADMINKA = (By.ID,"id_password")
+    BUTTON_LOGIN_ADMINKA = (By.CSS_SELECTOR,".submit-row input")
+    KOD_SMS_IN_ADMINKA = (By.CSS_SELECTOR,"#result_list .row1 .field-code")
