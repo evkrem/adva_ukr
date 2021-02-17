@@ -144,3 +144,26 @@ class AdminnPageLocators():
     POLE_PASWORD_ADMINKA = (By.ID,"id_password")
     BUTTON_LOGIN_ADMINKA = (By.CSS_SELECTOR,".submit-row input")
     KOD_SMS_IN_ADMINKA = (By.CSS_SELECTOR,"#result_list .row1 .field-code")
+
+class LkProfilePageLocators():
+    POLE_NAME = (By.CSS_SELECTOR,"input[formcontrolname='userFirstName']")
+    POLE_LAST_NAME = (By.CSS_SELECTOR,"input[formcontrolname='userLastName']")
+    POLE_CITY = (By.CSS_SELECTOR,"input[formcontrolname='userLocality']")
+    ERROR_MESSAGE_CITY = (By.CSS_SELECTOR,"form div:nth-child(2)  span:nth-child(2) small")
+    POLE_ADRES = (By.CSS_SELECTOR,"input[formcontrolname='userAddress']")
+    ERROR_MESSAGE_ADRES = (By.CSS_SELECTOR,"form div:nth-child(2)  span:nth-child(4) small")
+    POLE_EMAIL = (By.CSS_SELECTOR,"input[formcontrolname='userEmail']")
+    ERROR_EMAIL = (By.CSS_SELECTOR,"form section span:nth-child(2) small")
+    POLE_PASWORD1 = (By.CSS_SELECTOR,"form section input:nth-child(3)")
+    POLE_PASWORD2 = (By.CSS_SELECTOR,"form section input:nth-child(5)")
+    ERROR_DIFFERENT_PASSWORD = (By.CSS_SELECTOR, "form section span:nth-child(6) small")
+    LINK_AUTOCONTINUE_TERM_PAKET = (By.CSS_SELECTOR,"div label a")
+    BUTTON = (By.CSS_SELECTOR,".buttons-wrapper.w-100 button")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR,".success-massage")
+
+class LkMenu():
+    GOLOVNA = (By.CSS_SELECTOR,".menu-list li:nth-child(1)")
+    ZAYAVKI = (By.CSS_SELECTOR,".menu-list li:nth-child(2)")
+    PAKETI = (By.CSS_SELECTOR,".menu-list li:nth-child(3)")
+    DOKUMENTI = (By.CSS_SELECTOR,".menu-list li:nth-child(4)")
+    PROFILE = (By.CSS_SELECTOR,".menu-list li:nth-child(5)")
