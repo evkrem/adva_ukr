@@ -161,9 +161,17 @@ class LkProfilePageLocators():
     BUTTON = (By.CSS_SELECTOR,".buttons-wrapper.w-100 button")
     SUCCESS_MESSAGE = (By.CSS_SELECTOR,".success-massage")
 
-class LkMenu():
+class LkMenuLocators():
     GOLOVNA = (By.CSS_SELECTOR,".menu-list li:nth-child(1)")
     ZAYAVKI = (By.CSS_SELECTOR,".menu-list li:nth-child(2)")
     PAKETI = (By.CSS_SELECTOR,".menu-list li:nth-child(3)")
     DOKUMENTI = (By.CSS_SELECTOR,".menu-list li:nth-child(4)")
     PROFILE = (By.CSS_SELECTOR,".menu-list li:nth-child(5)")
+
+class MainLkLocators():
+    BUTTON_ORDER_PAKET_LK_1 = (By.CSS_SELECTOR,".packages .ng-star-inserted .row div:nth-child(2) button")
+    BUTTON_BUY_PAKET_IN_MODALKA = (By.CSS_SELECTOR,".wrapp-modal button.btn.btn-success")
+    LINK_ON_PROMOKOD_IN_ORDER_MODALKA__LK_BUY_PAKET = (By.CSS_SELECTOR,".wrapp-modal .a-promo")
+    POLE_FOR_PROMOKOD_IN_ORDER_MODALKA_LK_BUY_PAKET = (By.CSS_SELECTOR,".wrapp-modal input")
+    BUTTON_AKTIVATSII_PROMOKODA_IN_ORDER_MODALKA_LK_BUY_PAKET = (By.CSS_SELECTOR,".wrapp-modal button.btn.btn-info")
+    TEXT_EROR_FALSE_PROMOKOD_LK = (By.CSS_SELECTOR,".wrapp-modal .promo-error")

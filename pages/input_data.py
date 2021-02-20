@@ -13,3 +13,5 @@ class RandomUserData():
 
 class TestUser():
     user1 = "508974896"
+    email_test = "automat@zz.top"
+    pass_email_test = "123123"

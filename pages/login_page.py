@@ -1,6 +1,6 @@
 from .base_page import BasePage
 from .locators import LoginPageLocators, AdminnPageLocators, LkProfilePageLocators
-from .input_data import RandomUserData
+from .input_data import RandomUserData, TestUser
 from selenium.common.exceptions import NoSuchElementException
 import time
 
@@ -53,3 +53,12 @@ class LoginPage(BasePage):
         self.browser.switch_to.window(order_window)  # переключаемся на нее
         time.sleep(3)
         assert ".pdf" in self.browser.current_url, "link with order don`t open"
+
+    def login_with_email(self, browser):
+        self.browser.find_element(*LoginPageLocators.LOGIN_EMAIL).click()
+        self.browser.find_element(*LoginPageLocators.POLE_EMAIL).click()
+        self.browser.find_element(*LoginPageLocators.POLE_EMAIL).send_keys(*TestUser.email_test)
+        self.browser.find_element(*LoginPageLocators.POLE_PASWORD_ON_SERTIFICAT_AND_EMAIL).click()
+        self.browser.find_element(*LoginPageLocators.POLE_PASWORD_ON_SERTIFICAT_AND_EMAIL).send_keys(*TestUser.pass_email_test)
+        self.browser.find_element(*LoginPageLocators.BUTTON_LOGIN_ON_SERTIFICAT_AND_EMAIL_AND_SENG_PASSWORD_FOR_RESET).click()
+        time.sleep(10)

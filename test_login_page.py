@@ -22,3 +22,8 @@ class TestLoginPage():
         page3.open()
         page3.fit_out_profile(browser)
 
+    def test_entranse_with_email(self,browser):
+        link = "https://dev.adva.org.ua/ru/login"
+        page = LoginPage(browser, link)
+        page.open()
+        page.login_with_email(browser)

@@ -1,5 +1,5 @@
 from .base_page import BasePage
-from .locators import LkProfilePageLocators, LoginPageLocators, LkMenu
+from .locators import LkProfilePageLocators, LoginPageLocators, LkMenuLocators
 from .input_data import TestUser, RandomUserData
 import time
 

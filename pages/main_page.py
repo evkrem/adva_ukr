@@ -174,7 +174,7 @@ class MainPage(BasePage):
         self.browser.find_element(*MainPageLocators.BUTTON_AKTIVATSII_PROMOKODA_IN_ORDER_MODALKA_BUY_PAKET).click()
         text_activatsii_promokoda = self.browser.find_element(*MainPageLocators.TEXT_EROR_FALSE_PROMOKOD).text
         print("text asserta promo = ",text_activatsii_promokoda)
-        assert text_activatsii_promokoda == "AUTH-HOME.promo-success", "promokod okazalsya ne vernim"
+        assert text_activatsii_promokoda == "AUTH-HOME.promo-success", "promokod was wrond but he was used"
 
     def check_promocode_true(self,browser):
         self.browser.find_element(*MainPageLocators.BUTTON_ORDER_PAKET1).click()
