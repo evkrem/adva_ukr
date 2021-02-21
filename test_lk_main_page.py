@@ -1,4 +1,4 @@
-from .pages.main_lk_page import MainLkPage
+from .pages.lk_main_page import MainLkPage
 from .pages.login_page import LoginPage
 import pytest
 
@@ -13,10 +13,10 @@ class TestMainPageLk():
         link = "https://dev.adva.org.ua/ua/cabinet/dashbord"
         page = MainLkPage(browser,link)
         page.open()
-        page.pay_paket()
+        page.pay_paket(browser)
 
     def test_check_promocode(self,browser):
         link = "https://dev.adva.org.ua/ua/cabinet/dashbord"
         page = MainLkPage(browser,link)
         page.open()
-        page.pay_paket()
+        page.pay_paket(browser)

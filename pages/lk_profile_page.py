@@ -13,7 +13,7 @@ class CheckChangeDataLkProfile(BasePage):
         self.browser.switch_to.window(new_window)  # переключаемся на нее
 
     def input_error_city(self,browser):
-        self.browser.find_element(*LkMenu.PROFILE).click()
+        self.browser.find_element(*LkMenuLocators.PROFILE).click()
         self.browser.find_element(*LkProfilePageLocators.POLE_CITY).click()
         self.browser.find_element(*LkProfilePageLocators.POLE_CITY).send_keys("Kiev")
         try:
