@@ -191,7 +191,7 @@ class TestPayPaket():
         page.open()  # открываем страницу
         page.check_promocode_false(browser)
 
-    @pytest.mark.run
+    # @pytest.mark.run
     def test_check_promocode_true(self, browser):
         link = "https://dev.adva.org.ua/ru/home"
         page = MainPage(browser,link)  # инициализируем Page Object, передаем в конструктор экземпляр драйвера и url адрес

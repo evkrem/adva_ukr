@@ -14,7 +14,7 @@ class BasePage():
         self.browser.maximize_window()
         # self.browser.get(self.url)
 
-        self.browser.set_page_load_timeout(3)
+        self.browser.set_page_load_timeout(5)
         try:
             self.browser.get(self.url)
             print("URL successfully Accessed")

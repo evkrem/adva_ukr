@@ -3,7 +3,7 @@ from .pages.base_page import BasePage
 from .pages.oblasti_prava_page import OblastiPravaPage
 
 
-@pytest.mark.run
+# @pytest.mark.run
 class TestCheckContentArticles():
     def test_campare_link1_with_name_article(self, browser):
         link = "https://dev.adva.org.ua/ru/law-branches"

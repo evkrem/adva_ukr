@@ -7,7 +7,7 @@ import pytest
 
 class TestLoginPage():
     def test_profile_login(self, browser):
-        link = "https://dev.adva.org.ua/ru/login"
+        link = "https://dev.adva.org.ua/ru/login1"
         page = LoginPage(browser,link)
         page.open()
         page.login_with_phone(browser)

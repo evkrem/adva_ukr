@@ -14,7 +14,7 @@ class TestCampartNamePaketsOnMenuWithPaket():
         page.campare_names_paket5(browser)
         page.campare_names_paket6(browser)
 
-    @pytest.mark.run
+    # @pytest.mark.run
     def test_check_open_modal_buy(self,browser):
         link = "https://dev.adva.org.ua/ru/packages#test_package"
         page = PaketsPage(browser,
